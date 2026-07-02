@@ -67,11 +67,18 @@
 
 ## 环境准备
 
-本课程假设你已初步了解 Python 与 Git。建议使用 Python 3.10 环境运行课程代码。
+> ⚠️ **重要提示：请使用 Python 3.10 运行本课程代码。**
+>
+> 本课程中的依赖包（如 LlamaIndex、LangChain 及相关扩展）已针对 Python 3.10 进行兼容性验证。使用其他 Python 版本可能会导致依赖冲突或运行时错误。
+
+本课程假设你已初步了解 Python 与 Git。推荐通过以下命令创建 Python 3.10 虚拟环境：
 
 ```bash
-# 创建虚拟环境
-python3 -m venv llm_learn
+# 请确认系统已安装 Python 3.10
+python3.10 --version
+
+# 创建虚拟环境（必须使用 Python 3.10）
+python3.10 -m venv llm_learn
 source llm_learn/bin/activate
 
 # 安装依赖
@@ -81,7 +88,7 @@ pip install ipykernel
 python -m ipykernel install --user --name llm_learn --display-name "Python (llm_learn)"
 ```
 
-> 注意：运行 Notebook 前请在右上角选择对应的 Python 内核。
+> 注意：运行 Notebook 前请在右上角选择对应的 Python 内核 `Python (llm_learn)`。
 
 ---
 
